@@ -1,6 +1,6 @@
-package org.empire.animelis.utils;
+package org.landscape.animelis.utils;
 
-import org.empire.animelis.BuildConfig;
+import org.landscape.animelis.BuildConfig;
 
 /**
  * Created by Chatofrey on 17/04/2016.

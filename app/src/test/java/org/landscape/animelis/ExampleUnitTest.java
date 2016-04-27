@@ -1,4 +1,4 @@
-package org.empire.animelis;
+package org.landscape.animelis;
 
 import org.junit.Test;
 

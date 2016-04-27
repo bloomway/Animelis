@@ -1,4 +1,4 @@
-package org.empire.animelis;
+package org.landscape.animelis;
 
 import android.app.Application;
 

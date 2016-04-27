@@ -17,7 +17,10 @@
     <string name="item_title">Add a new item</string>
     <string name="item_name">Name of the item</string>
     <string name="url_or_site_name">Location of the item</string>
-
+    <string name="add_category">Ajouter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_category_title">Ajouter une catégorie</string>
+    <string name="category_name">Category name</string>
+    <string name="dummy_text">Animes</string>
 </resources>
