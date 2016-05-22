@@ -5,11 +5,11 @@ android {
     buildToolsVersion "24.0.0 rc2"
 
     defaultConfig {
-        applicationId "org.empire.animelis"
+        applicationId "org.empires.baham.kac.animelis"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
-        versionName "1.2.6"
+        versionName "1.2.8"
     }
     buildTypes {
         release {

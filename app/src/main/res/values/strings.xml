@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Animelis</string>
+    <string name="anime_detail">Animes</string>
+    <string name="movie_detail">Movies</string>
     <string name="action_settings">Settings</string>
 
     <!-- Anime list fragment title -->
@@ -23,4 +25,6 @@
     <string name="add_category_title">Ajouter une catégorie</string>
     <string name="category_name">Category name</string>
     <string name="dummy_text">Animes</string>
+    <string name="dummy_date">Mon May 23 09:30:21</string>
+    <string name="owner_name">anonymous</string>
 </resources>

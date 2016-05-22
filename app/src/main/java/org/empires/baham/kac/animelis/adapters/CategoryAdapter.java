@@ -1,4 +1,4 @@
-package org.empires.baham.kac.animelis.ui;
+package org.empires.baham.kac.animelis.adapters;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.empires.baham.kac.animelis.model.Category;
+import org.empires.baham.kac.animelis.utils.Logg;
 
 import java.util.List;
 
@@ -19,15 +20,21 @@ import java.util.List;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>{
 
     List<Category> mCategories;
+    private static OnItemClickListener mListener;
 
     public CategoryAdapter(List<Category> categories) {
         this.mCategories = categories;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.mListener = listener;
     }
 
     @Override
     public CategoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
        View rootView = LayoutInflater.from(parent.getContext())
                .inflate(org.empires.baham.kac.animelis.R.layout.card_layout, parent, false);
+        //Logg.d(CategoryAdapter.class.getSimpleName(), ""+viewType);
         return new CategoryViewHolder(rootView);
     }
 
@@ -54,6 +61,19 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
             super(view);
             categoryCardView = (CardView) view.findViewById(org.empires.baham.kac.animelis.R.id.cardview);
             categoryName = (TextView) view.findViewById(org.empires.baham.kac.animelis.R.id.cv_ctg_name);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View viewClicked) {
+                    if(mListener != null) {
+                        mListener.onItemClick(viewClicked, getLayoutPosition());
+                    }
+                }
+            });
         }
+    }
+
+    public interface OnItemClickListener {
+        public void onItemClick(View viewClicked, int position);
     }
 }
