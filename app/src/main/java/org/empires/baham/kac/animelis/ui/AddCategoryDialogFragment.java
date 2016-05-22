@@ -1,4 +1,4 @@
-package org.landscape.animelis.ui;
+package org.empires.baham.kac.animelis.ui;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -6,12 +6,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.landscape.animelis.R;
+import org.empires.baham.kac.animelis.R;
 
 /**
  * Created by Chatofrey on 28/04/2016.

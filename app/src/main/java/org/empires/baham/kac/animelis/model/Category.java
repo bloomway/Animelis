@@ -1,4 +1,4 @@
-package org.landscape.animelis.model;
+package org.empires.baham.kac.animelis.model;
 
 /**
  * Created by Chatofrey on 28/04/2016.

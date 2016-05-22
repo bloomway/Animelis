@@ -1,4 +1,4 @@
-package org.landscape.animelis.ui;
+package org.empires.baham.kac.animelis.ui;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.landscape.animelis.R;
-import org.landscape.animelis.model.Category;
+import org.empires.baham.kac.animelis.model.Category;
 
 import java.util.List;
 
@@ -28,7 +27,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @Override
     public CategoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
        View rootView = LayoutInflater.from(parent.getContext())
-               .inflate(R.layout.card_layout, parent, false);
+               .inflate(org.empires.baham.kac.animelis.R.layout.card_layout, parent, false);
         return new CategoryViewHolder(rootView);
     }
 
@@ -53,8 +52,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         public CategoryViewHolder(View view){
             super(view);
-            categoryCardView = (CardView) view.findViewById(R.id.cardview);
-            categoryName = (TextView) view.findViewById(R.id.cv_ctg_name);
+            categoryCardView = (CardView) view.findViewById(org.empires.baham.kac.animelis.R.id.cardview);
+            categoryName = (TextView) view.findViewById(org.empires.baham.kac.animelis.R.id.cv_ctg_name);
         }
     }
 }

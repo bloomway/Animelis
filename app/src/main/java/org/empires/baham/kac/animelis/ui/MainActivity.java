@@ -1,4 +1,4 @@
-package org.landscape.animelis.ui;
+package org.empires.baham.kac.animelis.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,8 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import org.landscape.animelis.R;
-import org.landscape.animelis.model.Category;
+import org.empires.baham.kac.animelis.R;
+import org.empires.baham.kac.animelis.model.Category;
 
 import java.util.ArrayList;
 import java.util.List;

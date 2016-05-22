@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.landscape.animelis"
+    package="org.empires.baham.kac.animelis"
     android:installLocation="auto">
 
     <!-- Permission to reach Internet -->
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MainActivity"
+            android:name="org.empires.baham.kac.animelis.ui.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="org.empires.baham.kac.animelis.ui.CategoryDetailActivity"></activity>
     </application>
 
 </manifest>
