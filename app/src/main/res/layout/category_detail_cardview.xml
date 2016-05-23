@@ -16,30 +16,82 @@
             android:paddingLeft="@dimen/activity_horizontal_margin">
 
             <TextView
-                android:id="@+id/anime_item_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/dummy_text"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:textSize="15sp"/>
-
-            <TextView
-                android:id="@+id/publication_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/dummy_date"
-                android:layout_below="@+id/anime_item_name"
-                android:layout_alignLeft="@+id/anime_item_name"/>
-
+                android:id="@+id/user_profile_thumbnail"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/holo_green_light"
+                android:text="A"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"/>
             <TextView
                 android:id="@+id/owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/owner_name"
-                android:layout_below="@+id/anime_item_name"
-                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/user_profile_thumbnail"
+                android:layout_alignTop="@+id/user_profile_thumbnail"
                 android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/anime_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_text"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_alignBottom="@+id/user_profile_thumbnail"
+                android:layout_alignLeft="@+id/owner"
+                android:layout_alignStart="@+id/owner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/anime_item_name"
+                android:layout_toRightOf="@+id/user_profile_thumbnail"
+                android:layout_alignLeft="@+id/anime_item_name" >
+
+                <TextView
+                    android:id="@+id/publication_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_date"
+                    android:textSize="8sp"
+                    android:layout_marginRight="16dp"/>
+
+                <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thumb_up_fb_color_32_29"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/like_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="8sp"
+                    android:layout_marginRight="32dp"/>
+
+                <ImageView
+                    android:id="@+id/dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/thumb_down_red_32_29" />
+                <TextView
+                    android:id="@+id/dislike_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="8sp"
+                    android:layout_marginLeft="16dp"/>
+
+            </LinearLayout>
+
+
+
+
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
